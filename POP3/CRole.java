@@ -89,7 +89,7 @@ public class CRole  {
 	}
 	public Choice2 receive_Choice2LabelFromS() {
 		this.Servermessage();
-		if(this.currentmessage.toString().charAt(0) == '.') {
+		if(this.currentmessage.toString().equals(".")) {
 			return new Choice2(Choice2.DOT);
 		}
 		else {
